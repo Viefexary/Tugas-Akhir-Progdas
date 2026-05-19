@@ -132,5 +132,6 @@ int main(){
 
     free(rasio);
     free(alokasi);
+    
     return 0;
 }
