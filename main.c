@@ -27,33 +27,33 @@ int main(){
         }
     }while(dewasa <= 0);
     do{
-        printf("Masukkan banyak anggota keluarga usia dibawah 14 tahun: ");
+        printf("Masukkan banyaknya anggota keluarga dengan usia di bawah 14 tahun: ");
         scanf("%d", &anak);
         if(anak < 0){
-            printf("Input tidak valid\n");
+            printf("Mohon maaf! Masukkan tidak sah.\n");
         }
     }while(anak < 0);
     
     Rasio* rasio = (Rasio*) malloc(bulan * sizeof(Rasio));
     Alokasi* alokasi = (Alokasi*) malloc(bulan * sizeof(Alokasi));
     float pendapatan[bulan], pengeluaran[bulan], tabungan[bulan];
-    printf("\nMasukkan Pendapatan: \n");
+    printf("\nMasukkan pendapatan Anda setelah baris ini.\n");
     for(int i = 0; i < bulan; i++){
         do{
-            printf("Bulan %d: ", i + 1);
+            printf("Bulan ke-%d: ", i + 1);
             scanf("%f", &pendapatan[i]);
             if(pendapatan[i] < 0){
-                printf("Input tidak valid\n");
+                printf("Mohon maaf! Masukkan tidak sah.\n");
             }
         }while(pendapatan[i] < 0);
     }
-    printf("\nMasukkan Pengeluaran\n");
+    printf("\nMasukkan pengeluaran Anda setelah baris ini.\n");
     for(int i = 0; i < bulan; i++){
         do{
-            printf("Bulan %d: ", i + 1);
+            printf("Bulan ke-%d: ", i + 1);
             scanf("%f", &pengeluaran[i]);
             if(pengeluaran[i] < 0){
-                printf("Input tidak valid\n");
+                printf("Mohon maaf! Masukkan tidak sah.\n");
             }
         }while(pengeluaran[i] < 0);
     }
