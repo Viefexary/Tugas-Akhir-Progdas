@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct{
+    float kebutuhan; float keinginan; float tabungan;
+}Rasio;
+
+typedef struct{
+    float utama; float dewasa; float anak;
+}Alokasi;
+
 void hitungRasio(float* pendapatan, Rasio* rasio, int bulan){
     for(int i = 0; i < bulan; i++){
         rasio[i].kebutuhan = pendapatan[i] * 0.5;
