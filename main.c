@@ -17,6 +17,20 @@ void hitungRasio(float* pendapatan, Rasio* rasio, int bulan){
     }
 }
 
+void grafik(float* skala, int bulan, int max){
+    for(int pencacah = 0; pencacah < bulan; pencacah++){
+        printf("Bulan ke-%d | ", pencacah + 1);
+        for(int pencacah_lain = 0; pencacah_lain < (int)(70 * skala[pencacah]/max); pencacah_lain++){
+            printf("#");
+        }
+        printf("  (Rp%.2f)", skala[pencacah]);
+        if(skala[pencacah] < 0){
+            printf("  (Pengeluaran yang berlebihan pada bulan ke-%d)", pencacah);
+        }
+    printf("\n");
+    }
+}
+
 int main(){
     int dewasa, anak, bulan;
     do{
