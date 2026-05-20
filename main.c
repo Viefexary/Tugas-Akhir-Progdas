@@ -100,39 +100,39 @@ int main(){
         printf("\nGolongan ekonomi: Kelas atas\n");
     }
 
-    printf("\n\nAlokasi dana berdasarkan prioritas pengeluaran (Aturan 50/30/20): \n\n");
-    printf("\nRingkasan saran pengeluaran untuk kebutuhan: \n");
+    printf("\nALOKASI DANA MENURUT PRIORITAS PENGELUARAN (ATURAN 50/30/20): \n\n");
+    printf("\nSaran pengeluaran kebutuhan: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = rasio[i].kebutuhan;
     }
     grafik(temp, bulan, max);
 
-    printf("\nRingkasan saran pengeluaran untuk keinginan: \n");
+    printf("\nSaran pengeluaran keinginan: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = rasio[i].keinginan;
     }
     grafik(temp, bulan, max);
 
-    printf("\nRingkasan saran pengeluaran untuk tabungan: \n");
+    printf("\nSaran pengeluaran tabungan: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = rasio[i].tabungan;
     }
     grafik(temp, bulan, max);
 
-    printf("\n\nAlokasi dana berdasarkan usia anggota keluarga (Skala Ekuivalensi OECD): \n\n");
-    printf("\nRingkasan saran pengeluaran bagi kepala keluarga dan kebutuhan rumah: \n");
+    printf("\nALOKASI DANA MENURUT USIA ANGGOTA KELUARGA (SKALA EKUIVALENSI OECD): \n\n");
+    printf("\nSaran pengeluaran untuk kepala keluarga dan kebutuhan rumah: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = alokasi[i].utama;
     }
     grafik(temp, bulan, max);
 
-    printf("\nRingkasan saran pengeluaran bagi setiap dewasa selain kepala keluarga: \n");
+    printf("\nSaran pengeluaran untuk setiap orang dewasa selain kepala keluarga: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = alokasi[i].dewasa;
     }
     grafik(temp, bulan, max);
 
-    printf("\nRingkasan saran pengeluaran bagi setiap anak: \n");
+    printf("\nSaran pengeluaran untuk setiap anak: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = alokasi[i].anak;
     }
