@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 void hitungRasio(float* pendapatan, Rasio* rasio, int bulan){
     for(int i = 0; i < bulan; i++){
         rasio[i].kebutuhan = pendapatan[i] * 0.5;
