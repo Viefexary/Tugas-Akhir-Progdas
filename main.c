@@ -13,18 +13,18 @@ void hitungRasio(float* pendapatan, Rasio* rasio, int bulan){
 int main(){
     int dewasa, anak, bulan;
     do{
-        printf("Masukkan banyak bulan: ");
+        printf("Masukkan banyaknya bulan: ");
         scanf("%d", &bulan);
         if(bulan <= 0){
-            printf("Input tidak valid\n");
+            printf("Mohon maaf! Masukkan tidak sah.\n");
         }
     }while(bulan <= 0);
     
     do{
-        printf("Masukkan banyak anggota keluarga usia diatas 14 tahun: ");
+        printf("Masukkan banyaknya anggota keluarga dengan usia di atas 14 tahun: ");
         scanf("%d", &dewasa);
         if(dewasa <= 0){
-            printf("Input tidak valid\n");
+            printf("Mohon maaf! Masukkan tidak sah.\n");
         }
     }while(dewasa <= 0);
     do{
