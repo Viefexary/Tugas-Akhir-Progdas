@@ -77,27 +77,27 @@ int main(){
     rata = total / bulan;
 
     float temp[bulan];
-    printf("\n\nPemasukan dan Pengeluaran: \n\n");
-    printf("\nRingkasan Pendapatan: \n");
+    printf("\nRINGKASAN PEMASUKAN DAN PENDAPATAN\n");
+    printf("\nPendapatan:\n");
     grafik(pendapatan, bulan, max);
-    printf("\nRingkasan Pengeluaran: \n");
+    printf("\nPengeluaran:\n");
     grafik(pengeluaran, bulan, max);
-    printf("\nRingkasan Tabungan: \n");
+    printf("\nTabungan: \n");
     grafik(tabungan, bulan, max);
     if(rata <= 641443){
-        printf("\nGolongan: Miskin\n");
+        printf("\nGolongan ekonomi: Miskin\n");
     }
     else if(rata > 641443 && rata < 962164){
-        printf("\nGolongan: Rentan Miskin");
+        printf("\nGolongan ekonomi: Rentan miskin\n");
     }
     else if(rata > 962164 && rata < 2245050){
-        printf("\nGolongan: Menuju Kelas Menengah\n");
+        printf("\nGolongan ekonomi: Menuju kelas menengah\n");
     }
     else if(rata > 2245050 && rata < 10904531){
-        printf("\nGolongan: Kelas Menengah\n");
+        printf("\nGolongan ekonomi: Kelas menengah\n");
     }
     else if(rata >= 10904531){
-        printf("\nGolongan: Kelas Atas\n");
+        printf("\nGolongan ekonomi: Kelas atas\n");
     }
 
     printf("\n\nAlokasi dana berdasarkan prioritas pengeluaran (Aturan 50/30/20): \n\n");
