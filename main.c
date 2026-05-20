@@ -1,3 +1,9 @@
+/* Anggota Kelompok dan NPM:
+1. Harland Yogananda (2506578333)
+2. Muhammad Dwi Yudha Utama (2506622134)
+3. Nicholas Michael Halim (2506590593)
+4. Vikko Adibratha (2506585290) */
+
 #include <stdio.h>
 #include <stdlib.h>
 
