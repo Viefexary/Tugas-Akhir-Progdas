@@ -108,7 +108,7 @@ int main(){
     rata = total / bulan;
 
     float temp[bulan];
-    printf("\nRINGKASAN PEMASUKAN DAN PENDAPATAN\n");
+    printf("\nRINGKASAN PEMASUKAN DAN PENDAPATAN");
     printf("\nPendapatan:\n");
     grafik(pendapatan, bulan, max);
     printf("\nPengeluaran:\n");
@@ -131,7 +131,7 @@ int main(){
         printf("\nGolongan ekonomi: Kelas atas\n");
     }
 
-    printf("\nALOKASI DANA MENURUT PRIORITAS PENGELUARAN (ATURAN 50/30/20): \n\n");
+    printf("\nALOKASI DANA MENURUT PRIORITAS PENGELUARAN (ATURAN 50/30/20):");
     printf("\nSaran pengeluaran kebutuhan: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = rasio[i].kebutuhan;
@@ -150,7 +150,7 @@ int main(){
     }
     grafik(temp, bulan, max);
 
-    printf("\nALOKASI DANA MENURUT USIA ANGGOTA KELUARGA (SKALA EKUIVALENSI OECD): \n\n");
+    printf("\nALOKASI DANA MENURUT USIA ANGGOTA KELUARGA (SKALA EKUIVALENSI OECD):");
     printf("\nSaran pengeluaran untuk kepala keluarga dan kebutuhan rumah: \n");
     for(int i = 0; i < bulan; i++){
         temp[i] = alokasi[i].utama;
